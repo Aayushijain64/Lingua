@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Menuasl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/asl">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/voiceInputasl"
+            android:layout_width="match_parent"
+            android:textSize="30dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"
+            android:text=""
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/btnSpeakContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/btnSpeak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="68dp"
+            android:layout_marginStart="128dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:maxHeight="100dp"
+            android:maxWidth="100dp"
+            android:padding="16dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/speech"
+            android:layout_marginLeft="128dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="100dp"
+            android:text="Press the button to speak"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/barrier13"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="100dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gi"
+            android:text="Go to isl"
+            android:textSize="10dp"/>
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top" />
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

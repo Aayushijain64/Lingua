@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lingua1"
+    tools:context="com.example.aayushijain.lingua.MainActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="52dp">
+
+        <TextView
+            android:layout_width="307dp"
+            android:layout_height="372dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="164dp"
+            android:text="Accessability eradicates disability "
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="8dp" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left"
+            tools:layout_editor_absoluteX="364dp"
+            tools:layout_editor_absoluteY="20dp" />
+
+    </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/asl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="176dp"
+            android:layout_marginStart="176dp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="ASL"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/barrier4"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/isl"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="192dp"
+            android:layout_marginLeft="176dp"
+            android:layout_marginStart="176dp"
+            android:background="@android:color/holo_red_light"
+            android:text="ISL"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="176dp" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <android.support.constraint.Barrier
+            android:id="@+id/barrier25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="175dp"
+        android:layout_marginLeft="65dp"
+        android:textColor="@android:color/background_dark"
+        android:text="Choose from the two Systems"
+        android:textSize="20dp" />
+-->
+</RelativeLayout>
